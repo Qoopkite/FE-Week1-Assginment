@@ -4,29 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      header{
+        text-align: center;
+        background-color: rgb(248, 223, 227);
+        padding : 20px;
+      }
+      ul{
+        display: flex;
+        justify-content: flex-end;
+      }
+      li{
+        padding-left: 5px;
+        padding-right:5px;
+      }
+      .no_dot{
+        list-style-type: none;
+      }
+      .section1{
+        background-color: rgb(206, 142, 152);
+        height :500px;
+        margin-bottom: -20px;
+      }
+      .input-field{
+        padding:15px;
+        margin:2px
+      }
+      .section2{
+        background-color: rgb(196, 142, 206);
+        height :500px;
+        margin-bottom: -20px;
+      }
+      .foo{
+        background-color: rgb(142, 172, 206);
+        margin-bottom: -20px;
+      }
+      .h2 {
+        margin-bottom: 1px; 
+      }
+
+     .p1{
+        margin-top: -20px;
+      }
+
+    </style>
   </head>
-  <body>
+  <body bgcolor="black">
     <header>*** 블로그 입니다</header>
     <nav>
-      <ul>
+      <ul class="no_dot">
         <li><a href="#">HOME</a></li>
         <li><a href="#">DIARY</a></li>
         <li><a href="#">MEDIA</a></li>
       </ul>
     </nav>
     <article>
-      <section>
+      <section class ="section1">
         <form action="">
-          <input type="text" placeholder="아이디" />
-          <input type="password" placeholder="비밀번호" />
+          <input type="text" class="input-field" placeholder="아이디" /><br>
+          <input type="password"  class="input-field" placeholder="비밀번호" />
         </form>
       </section>
-      <section>
+      <section class ="section2">
         <h2>안녕하세요!</h2>
-        <p>HTML 실습 과제입니다.</p>
+        <p class="p1">HTML 실습 과제입니다.</p>
       </section>
     </article>
-    <footer>
+    <footer class ="foo">
       <p>이곳은 footer입니다.</p>
     </footer>
   </body>
